@@ -1,0 +1,20 @@
+{
+  "name": "sample-contracts",
+  "version": "1.0.0",
+  "description": "sample-contracts",
+  "main": "index.js",
+  "scripts": {
+    "build": "hardhat compile",
+    "dev": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sand": "hardhat run scripts/walletLinkDeploy.ts --network sand",
+    "mint:sand": "hardhat run scripts/mint.ts --network sand",
+    "test": "hardhat test"
+  },
+  "author": "rmanzoku",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
+  }
+}
